@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .dropdown { /* dropdown jest to blok */
+            display: inline-block; /* blok ale moze być jeden obok drugiego */
+            position: relative;
+        }
+        .dropdown-content { /* zawartość rozwijanego menu */
+        display: none;
+        position: absolute; /* niezależny od strony */
+        background-color: aqua;
+        width: 200px;
+        z-index: 1; /* oś przód tył (jeden element wyżej od drugiego) */
+        padding: 10px 10px;
+        }
+        .dropdown:hover .dropdown-content { /* po najechaniu element klasy dropdown się pojawi */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <span>Dropdown</span>
+        <div class="dropdown-content">
+        <p>
+            Menu rozwijane
+        </p>
+    </div>
+    <p></p>
+</body>
+</html>
