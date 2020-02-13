@@ -19,7 +19,7 @@ for(let i = 0; i < arr.length; i++) {
 arr.push(50); //dodaje wartość 50 do tablicy
 
 //tworzenie prototypu
-Array.ptototype.showAll = function() {
+Array.prototype.showAll = function() {
     for(let i = 0; i < arr.length; i++) {
         document.write(arr[i]); //wypisuje wszystkie elementy tablicy tylko jest krócej (prototyp to dołączenie metody do utworzonej klasy) 
     }
