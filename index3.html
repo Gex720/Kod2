@@ -8,11 +8,27 @@
     <style>
         .dropdown { /* dropdown jest to blok (rozwijany w np w dół) */
             display: inline-block; /* blok ale moze być jeden obok drugiego */
-            position: relative;
+            position: relative; /* jest przyczepione do strony */
+            width: 15%;
+            padding: 0;
+            margin: 0;
         }
+
+        .dropdown span {
+            display: block;
+            padding: 5px;
+            text-align: center;
+            background-color: gray;
+            cursor: default;
+        }
+
+        .dropdown span:hover {
+            background-color: blue;
+        }
+
         .dropdown-content { /* zawartość rozwijanego menu */
-        display: none;
-        position: absolute; /* niezależny od strony */
+        display: none; /* początkowo ten element jest niewidoczny */
+        position: absolute; /* niezależny od strony(jest nakładany na inne elementy) */
         background-color: aqua;
         width: 200px;
         z-index: 1; /* oś przód tył (jeden element wyżej od drugiego) */
@@ -21,18 +37,56 @@
         .dropdown:hover .dropdown-content { /* po najechaniu element klasy dropdown się pojawi */
             display: block;
         }
+
+        .dropdown-content ul {
+            list-style-type: none;
+        }
+
+        .dropdown-content ul li a {
+            display: block;
+            text-decoration: none;
+            color: magenta;
+        }
+
+        .dropdown-content ul li a:hover {
+            display: block;
+            text-decoration: none;
+            color: rgb(128, 81, 128);
+            background-color: rgb(211, 117, 211);
+        }
     </style>
 </head>
 <body>
     <div class="dropdown">
         <span>Dropdown</span>
         <div class="dropdown-content">
-        <p>
-            Menu rozwijane
-        </p>
+            <ul>
+                <li><a href="link1">Link 1</a></li>
+                <li><a href="link2">Link 2</a></li>
+                <li><a href="link3">Link 3</a></li>
+                <li><a href="link4">Link 4</a></li>
+                <li><a href="link5">Link 5</a></li>
+            </ul>
     </div>
-    <p></p>
-
-<!-- Można użyć menu rowijanego też w np.w menu poziomym (coś jak np. na zsht) -->
+</div>
+<div>
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum sit sed incidunt laboriosam ratione enim earum ut excepturi fugiat quis corrupti sunt facilis molestias, porro deleniti tempora blanditiis delectus distinctio!
+Laboriosam eveniet saepe tempora esse ab pariatur eaque minima? Eum ipsa deserunt beatae qui repudiandae dignissimos, quos, omnis dicta laborum rerum error. At ratione, vel exercitationem totam illum id illo?
+Porro fugit eos velit in quam aut commodi earum, placeat odio veniam labore omnis explicabo ducimus natus quasi est nulla nam nostrum nisi accusantium hic tenetur ad? Qui, eaque iusto.
+Ullam tempore voluptatibus, saepe, tempora eius voluptas id ipsam iste error similique ut voluptatem nulla ipsa, quam doloribus consectetur tenetur? Sequi optio modi rerum officia aliquid inventore molestiae. Repellendus, distinctio.
+Officiis, voluptatibus voluptatem commodi officia distinctio sunt tempora facere doloremque est unde sit eum, dolorum ea enim dolor, earum sint amet possimus a. Cupiditate est suscipit ab rerum iure aperiam.
+Eum similique obcaecati veniam ipsum cumque totam nihil dolor praesentium, aspernatur incidunt laboriosam itaque eaque sunt consequuntur sed. Voluptas maiores corrupti aperiam ipsum. Nostrum ad aliquid, expedita aspernatur voluptates dolore.
+Molestias eaque sunt neque nemo cum maiores fugit dignissimos corrupti atque fugiat, unde magnam repellendus optio aut ducimus facere quam est. Quae est alias iure consequuntur ipsam deserunt voluptatum! Quis!
+Ex cumque omnis officia! Inventore ullam animi quia cumque sit minus, totam a nam aut et nihil doloremque dolor? Ipsam voluptate molestias, beatae omnis nemo minus eum fuga est! Consequatur.
+Repudiandae at eligendi explicabo. Rerum ad suscipit ratione aliquid in sed porro laborum facere, molestiae iusto nam aut voluptatibus fuga delectus fugiat magni repellendus. Possimus minus doloremque obcaecati hic soluta!
+Autem quos reprehenderit quo quisquam sed eligendi harum culpa ipsa? Commodi ipsam voluptatum velit eius ipsum optio fuga dolorum, ut quaerat, tempore corrupti omnis, maiores nam magnam voluptatibus temporibus exercitationem.
+</div>
+<ul>
+    <li>a</li>
+    <li>b</li>
+    <li>c</li>
+    <li>d</li>
+    <li>e</li>
+</ul>
 </body>
 </html>
