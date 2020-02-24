@@ -28,5 +28,5 @@ Array.prototype.showAll = function() {
 //wyświetlanie zawartości przy pomocy prototypu
 arr.showAll(); //wyświetla całą zawartość tablicy
 
-var arr2 = new(a, b, c, d, f)
-arr2.showAll() //wyświetli całą zawartość drugiej tablicy (ta sama metoda showAll co przy arr(nie trzeba dwa razy pisać tej samej metody))
+var arr2 = new(a, b, c, d, f);
+arr2.showAll(); //wyświetli całą zawartość drugiej tablicy (ta sama metoda showAll co przy arr(nie trzeba dwa razy pisać tej samej metody))

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) { //dodaje nowy event i sprawdza czy strona jest już wczytana
+            console.log("DOM wczytany");
+
+            //let div1 = document.getElementById('div1'); //zmiennej div1 przypisuje element z id div1
+            let div1 = document.querySelector('#div1'); //robi to samo co linijka wyżej (2sposob)
+            //div1.addEventListener('click', function() { //nasłuchiwanie kiknięcia w elemencie div1
+            //    alert('click2'); //wyświetla alert po kliknięciu na div1
+            //});
+
+            div1.onclick = function() { //przypisanie funkcji anonimowej (robi to samo co wyżej(3 sposob))
+                alert('click3')
+            }
+        });
+    </script>
+</head>
+<body>
+    <div onclick="alert('click')">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione soluta optio delectus, numquam aut ab voluptate eveniet odit modi consequuntur. Corrupti quasi distinctio fuga. Reprehenderit delectus nihil nostrum veniam cumque.</div>
+    <div id = "div1">Dolorum mollitia totam laudantium quos nostrum provident quae molestiae optio. Quisquam explicabo corporis placeat animi dolore reprehenderit magni, libero, iusto voluptas deserunt voluptate cupiditate rerum voluptatem earum, est quam unde.</div>
+    <div >Qui alias ex reprehenderit, laborum culpa aliquam aperiam assumenda vitae repudiandae suscipit ad voluptatum deserunt, exercitationem ut molestiae sapiente repellat autem! Eos repellat, sit laudantium sint voluptatum at officiis est.</div>
+    <div>Iste, harum? Obcaecati dolor amet rerum officia autem facere nobis quibusdam laboriosam dignissimos consequatur nulla ducimus, quaerat inventore, hic iusto minus minima totam, excepturi repellendus expedita voluptatem quasi dolorum exercitationem!</div>
+    <div>Odio, iste. Quam ratione incidunt, voluptates nemo ad dolores eos recusandae atque cumque architecto voluptas ab! Nam nobis dignissimos hic nostrum odio voluptate reiciendis illo, similique, ut modi quisquam impedit?</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti provident reprehenderit quisquam, molestias voluptas neque odit. Sapiente veritatis reiciendis ex ratione fuga voluptatibus repudiandae consectetur aliquid magni, inventore doloribus quos?</div>
+    <div>Omnis quaerat atque eaque cumque! Rem iusto reprehenderit, pariatur eaque nulla soluta beatae nemo, veniam illum autem eius fuga quisquam neque, enim dicta? Illo sequi illum, excepturi et inventore nostrum?</div>
+    <div>Ea commodi cupiditate, perspiciatis eaque a saepe officiis labore, esse vel ab tempora, qui exercitationem adipisci sequi maxime cum magni id odio facilis vitae debitis vero. Odit ratione quasi in.</div>
+</body>
+</html>
