@@ -1,0 +1,63 @@
+ul 
+{
+    list-style: none;
+    float: left;
+}
+
+ul > li /* > można zastąpić spacją */ /* ul znajdujące się w li */
+{
+    margin: 0;
+    padding: 0;
+    float: left;
+    position: relative;
+    width: 50px;
+    background-color: crimson;
+    border-radius: 5px;
+}
+
+ul > li > a
+{
+    padding: 5px;
+    color: #333333;
+    text-decoration: none;
+}
+
+ul > li > a:hover, ul > li > a>:hover /* po najechaniu myszką */ /* przecinek grupuje elementy*/
+{
+    color: #dddddd;
+    cursor: default;
+}
+
+ul li ul
+{
+    display: none;
+    position: absolute; /* nie przesuwa treści po wyświetleniu */
+    padding: 0;
+    left: 0px; /* żeby się nie przeuwało względem elementu nadrzędnego*/
+    top: 20px;
+    width: 50px;
+    text-align: center;
+    background-color: lightgreen;
+    border: 1px solid #000000;
+}
+
+ul li:hover > ul
+{
+    display: block;
+}
+
+ul > li ul ul
+{
+    left: 200px;
+    top: -1px;
+}
+
+ul > li ul li
+{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    float: none;
+    height: auto;
+    margin-bottom: 5px;
+}
