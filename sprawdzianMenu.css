@@ -1,0 +1,67 @@
+ol
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    width: 320px;
+    height: 30px;
+    border: 2px solid black;
+}
+
+ol > li
+{
+    float: left;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: blueviolet;
+}
+
+ol > li > a
+{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+ol > li > a:hover
+{
+    color: aqua;
+    background-color: blue;
+    border-radius: 10px;
+}
+
+ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+    border: 1px solid black;
+}
+
+ol > li:hover > ul
+{
+    display: block;
+}
+
+ol > li > ul > li
+{
+    background-color: crimson;
+}
+
+ol > li > ul > li > a
+{
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+}
+
+ol > li > ul > li > a:hover
+{
+    color: aquamarine;
+    background-color: lime;
+    border-radius: 10px;
+}
